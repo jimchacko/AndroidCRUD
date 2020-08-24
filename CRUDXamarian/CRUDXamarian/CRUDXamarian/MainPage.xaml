@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CRUDXamarian.MainPage">
+
+
+
+    <Grid Margin="20,35,20,20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.4*" />
+            <ColumnDefinition Width="0.6*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <Entry x:Name="cityEntry"
+               Grid.ColumnSpan="2"
+               Text="" />
+        <Button Grid.ColumnSpan="2"
+                Grid.Row="1"
+                Text="Get Employee"
+                Clicked="OnButtonClicked" />
+        <Label Grid.Row="2"
+               Text="Id:" />
+        <Label Grid.Row="2"
+               Grid.Column="1"
+               Text="{Binding id}" />
+        <Label Grid.Row="3"
+               Text="Name:" />
+        <Label Grid.Row="3"
+               Grid.Column="1"
+               Text="{Binding Name}" />
+        <Label Grid.Row="4"
+               Text="Address:" />
+        <Label Grid.Row="4"
+               Grid.Column="1"
+               Text="{Binding Address}" />
+        <Label Grid.Row="5"
+               Text="Email:" />
+        <Label Grid.Row="5"
+               Grid.Column="1"
+               Text="{Binding Email}" />
+        <Label Grid.Row="6"
+               Text="Company:" />
+        <Label Grid.Row="6"
+               Grid.Column="1"
+               Text="{Binding Company}" />
+    </Grid>
+</ContentPage>
